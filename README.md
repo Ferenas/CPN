@@ -11,7 +11,7 @@ larger like 8 or 16 if you have sufficient GPU resources, which you may get high
  in BaiDuYun, and the code is **v55t**.
 * PASCAL VOC 2012 devkit with expanded version, which includes 10582 training samples.
 ## Usage
-1. Train the CPN to obtain the weight, which will be saved in "CPN/CPN". Remember to set the **VOC12 and pre-trained weight** path in the script. ```
+1. Train the CPN to obtain the weight, which will be saved in "CPN/CPN". Remember to set the **VOC12 and pre-trained weight** path in the script. 
     ```
     python train_cpn.py
     ```
