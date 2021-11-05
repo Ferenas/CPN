@@ -7,7 +7,7 @@ Weakly Supervised Semantic Segmentation (WSSS) based on image-level labels has b
 ## Prerequisite
 * The requirements are in **requirements.txt**. However, the settings are not limited to it (CUDA 11.0, Pytorch 1.7 for one RTX3090). Besides,the batch size could be even
 larger like 8 or 16 if you have sufficient GPU resources, which you may get higher performance than the paper reported.
-* The pretrained_weight for ResNet38 is [here](https://pan.baidu.com/s/1mx2vX2iRNsXum82n4x-xqw) 
+* The pretrained_weight for the initialization of ResNet38 and well-trained CPN is [here](https://pan.baidu.com/s/1mx2vX2iRNsXum82n4x-xqw) 
  in BaiDuYun, and the code is **v55t**.
 * PASCAL VOC 2012 devkit with expanded version, which includes 10582 training samples.
 ## Usage
@@ -16,7 +16,7 @@ larger like 8 or 16 if you have sufficient GPU resources, which you may get high
     python train_cpn.py
     ```
 
-2. Generate the foreground seeds of CAM (without background) using the weight, the results is in **out_cam**.
+2. Generate the foreground seeds of CAM (without background) using the weight or the well-trained CPN, the results is in **out_cam**.
 
     ``` 
     python infer_cam.py 
